@@ -1,6 +1,7 @@
 <li style="list-style-type :none">
     <li>
     Author:  {{question.author}} <br> Type: {{question.type}} <br> City: {{question.city}} <br> Question: {{question.question}}
+    {{update-question question=question update="update"}}
   <button type="button" class="btn btn-primary btn-sm"{{action 'delete' question}}>Delete Question</button>
 </li>
 </li>

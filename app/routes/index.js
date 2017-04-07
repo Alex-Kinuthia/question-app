@@ -11,7 +11,7 @@ export default Ember.Route.extend({
       newQuestion.save();
       this.transitionTo('index');
     },
-
+    // user to be able to delete
     destroyQuestion(question) {
       question.destroyRecord();
       this.transitionTo('index');
