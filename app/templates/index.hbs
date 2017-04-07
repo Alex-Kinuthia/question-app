@@ -1,5 +1,11 @@
 <h1> Welcome to Question-Board</h1>
 
 We hope you will find questions,ask and post new questions.
+<ul>
+  {{#each model as |question|}}
+     <li>{{question.author}} <br> {{question.city}} <br> {{question.type}} <br> {{question.question}}</li>
+  {{/each}}
+</ul>
+
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
