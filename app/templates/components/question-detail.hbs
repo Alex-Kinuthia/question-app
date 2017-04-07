@@ -1,2 +1,9 @@
 Who wrote this question is {{question.author}}, and its type is {{question.type}} <br> he is located in {{question.city}} and his question is{{question.question}}.
+
+<h2> Reviews </h2>
+<ul>
+  {{#each question.reviews as |review|}}
+    {{review-tile review=review  destroyReview="destroyReview"}}
+  {{/each}}
+</ul>
 <button {{action 'delete' question}}>Delete</button>

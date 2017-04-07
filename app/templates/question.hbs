@@ -1,4 +1,6 @@
 <h2>More information about {{model.author}}'s {{model.question}}</h2>
 {{update-question question=model update="update"}}
 
-{{question-detail question=model destroyQuestion="destroyQuestion"}}
+{{question-detail question=model destroyQuestion="destroyQuestion" destroyReview="destroyReview"}}
+
+{{new-review saveReview="saveReview" question=model}}

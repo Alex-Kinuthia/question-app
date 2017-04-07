@@ -15,6 +15,12 @@ export default Ember.Route.extend({
               newQuestion.save();
               this.transitionTo('index');
             },
+            // enables users to add reviews and save their reviews 
+            saveReview(params) {
+              var newReview = this.store.createRecord('review', params);
+              newReview.save();
+              this.transitionTo('index');
+            }
             // user to update
             update(question, params) {
               Object.keys(params).forEach(function(key) {
