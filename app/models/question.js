@@ -5,5 +5,5 @@ export default DS.Model.extend({
   author: DS.attr(),
   city: DS.attr(),
   type: DS.attr(),
-  quesion: DS.attr()
+  question: DS.attr()
 });

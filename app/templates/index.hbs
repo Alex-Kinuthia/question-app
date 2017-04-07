@@ -1,8 +1,11 @@
 <h1> Welcome to Question-Board</h1>
 
 We hope you will find questions,ask and post new questions.
+
 <ul>
   {{#each model as |question|}}
-     <li>Author:{{question.author}} <br> City:{{question.city}} <br> Type: {{question.type}} <br> Question: {{question.question}}</li>
+     {{question-tile question=question destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
+
+{{new-question saveQuestion2="saveQuestion3"}}
