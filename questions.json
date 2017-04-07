@@ -13,5 +13,14 @@
     "city": "Portland",
     "type": "Life",
     "question": "Why do people give up in life?"
-  }]
-}
+  }],
+  "reviews": [{
+     "author": "Andrea",
+     "rating": 4,
+     "content": "Nice questions."
+   }, {
+     "author": "Alex",
+     "rating": 9,
+     "content": "Questions well asked"
+   }]
+ }
