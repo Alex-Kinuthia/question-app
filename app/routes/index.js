@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-var rentals = [{
+var questions = [{
   id: 1,
   author: "Veruca Salt",
   city: "San Francisco",

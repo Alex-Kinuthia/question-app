@@ -1,0 +1,41 @@
+@font-face {
+  font-family: budmo;
+  src: url(../budmo.ttf);
+}
+
+@font-face {
+  font-family: wood;
+  src: url(../wood.ttf);
+}
+
+.jumbotron {
+  margin-top: -20px;
+  background-color: #D3D3D3;
+  text-align: center;
+  padding: 5px 30px 5px 30px;
+}
+
+.jumbotron h1 {
+  font-family: budmo;
+}
+
+nav {
+  padding: 8px 0px 5px 5px;
+  text-align: left;
+}
+
+nav ul {
+  list-style: none;
+  ;
+}
+
+nav ul li button {
+  width: 100px;
+  display: inline;
+  margin-right: 0px;
+}
+
+.contact-banner {
+  font-family: wood;
+  font-size: 50px;
+}
