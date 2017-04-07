@@ -1,0 +1,17 @@
+{ "questions": [{
+    "author": "Veruca Salt",
+    "city": "San Francisco",
+    "type": "Education",
+    "question": "What are the 4 principles of matter?"
+  }, {
+    "owner": "Mike Teavee",
+    "city": "Seattle",
+    "type": "Entertainment",
+    "question": "Why do Kenyan djs not play Kenyan music?"
+  }, {
+    "owner": "Violet Beauregarde",
+    "city": "Portland",
+    "type": "Life",
+    "question": "Why do people give up in life?"
+  }]
+}

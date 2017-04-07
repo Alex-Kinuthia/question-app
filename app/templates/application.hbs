@@ -1,22 +1,15 @@
 <div class="jumbotron">
   <h1>Message-Board</h1>
   <div class="bar">
-  <nav class="navbar navbar-inverse navbar-static-top">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <div class="home"><br>
-        <li>{{#link-to 'index'}}<button class="btn btn-default">HOME</button>{{/link-to}}</li>
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container-fluid">
+        <div class="nav navbar-nav">
+          {{#link-to 'index'}}<button class="btn btn-default">HOME</button>{{/link-to}}
+          {{#link-to 'about'}}<button class="btn btn-default">ABOUT</button>{{/link-to}}
+          {{#link-to 'contact'}}<button class="btn btn-default">CONTACT</button>{{/link-to}}
         </div>
-        <div class="about"><br>
-        <li>{{#link-to 'about'}}<button class="btn btn-default">ABOUT</button>{{/link-to}}</li>
-       </div>
-       <div class="contact"><br>
-        <li>{{#link-to 'contact'}}<button class="btn btn-default">CONTACT</button>{{/link-to}}</li>
-        </div>
-      </ul>
-
-    </div>
-  </nav>
-</div>
+      </div>
+    </nav>
+  </div>
 </div>
 {{outlet}}
