@@ -1,11 +1,13 @@
 import Ember from 'ember';
 
-export function questionPopularity(params) {
-  var rental = params[0];
-
-  if (rental.get('reviews').get('length') >= 5) {
-    return Ember.String.htmlSafe('<span class="glyphicon glyphicon-fire"></span>');
+export default Ember.Service.extend({
+  favorites: [],
+  saveToFavorites(question) {
+    if (!(this.favorites.includes(question))) {
+      this.get('favorites').pushObject(question);
+    }
+  },
+  clearFavorites() {
+    this.set('favorites', []);
   }
-}
-
-export default Ember.Helper.helper(questionPopularity);
+});
