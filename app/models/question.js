@@ -1,5 +1,9 @@
+// creation of attributes
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-
+  author: DS.attr(),
+  city: DS.attr(),
+  type: DS.attr(),
+  quesion: DS.attr()
 });

@@ -1,8 +1,7 @@
-/* eslint-env node */
-
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'question-board',
+    modulePrefix: 'super-rentals',
+    #This will differ depending on what you named YOUR app.
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -10,11 +9,15 @@ module.exports = function(environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
-      },
-      EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
-        Date: false
       }
+    },
+
+    firebase: {
+      apiKey: "AIzaSyDWJQ2bIpX8psBQYf1w1O9o5cvP7Ulw790",
+      authDomain: "question-board-c2970.firebaseapp.com",
+      databaseURL: "https://question-board-c2970.firebaseio.com",
+      projectId: "question-board-c2970",
+      storageBucket: "question-board-c2970.appspot.com"
     },
 
     APP: {
