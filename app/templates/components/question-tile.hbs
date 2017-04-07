@@ -3,5 +3,8 @@
     {{#link-to 'question' question.id}} Author:  {{question.author}} <br> Type: {{question.type}} <br> City: {{question.city}} <br> Question: {{question.question}}{{/link-to}}
     {{update-question question=question update="update"}}
   <button type="button" class="btn btn-primary btn-sm"{{action 'delete' question}}>Delete Question</button>
+  <button type="button" class="btn btn-primary btn-sm"{{action 'like' question}}>Like</button>
+  <button type="button" class="btn btn-primary btn-sm"{{action 'hate' question}}>Hate</button>
+
 </li>
 </li>

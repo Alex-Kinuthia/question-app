@@ -4,7 +4,7 @@ We hope you will find questions,ask and post new questions.
 
 <ul>
   {{#each model as |question|}}
-     {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+     {{question-popularity question}} {{question-tile question=question update="update" destroyQuestion="destroyQuestion" likeQuestion="likeQuestion" hateQuestion="hateQuestion"}}
   {{/each}}
 </ul>
 

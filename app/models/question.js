@@ -7,6 +7,8 @@ export default DS.Model.extend({
   type: DS.attr(),
   question: DS.attr(),
   reviews: DS.hasMany('review', {
-    async: true
-  })
+    async: true,
+    likes: DS.attr(),
+    dislikes: DS.attr()
+  }),
 });
